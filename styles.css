@@ -1,0 +1,60 @@
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    appearance: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logocol {
+    display: flex;
+    width: 40vw;
+}
+
+.formcol {
+    width: 60vw;
+    background-color: blue;
+    
+}
+
+img {
+}
+
+.fernleaves {
+    position: absolute;
+    width: 60vw;
+    z-index: -1;
+    margin-left: -5vw;
+    
+}
+
+.odinlogo {
+    height: 100px;
+}
+
+.odinlogodiv {
+    height: 100px;
+    font-size: 100%;
+    display: flex;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    width: 40vw;
+    flex-direction: row;
+    top: 30vh;
+    align-self: center;
+    justify-content: center;
+}
+
+.odinlogodiv p {
+    align-self: center;
+    font-size: 400%;
+}
+
+.credit {
+    align-self: flex-end;
+}
