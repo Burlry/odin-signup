@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "odin";
+    src:url("fonts/Norse-Bold-_1_.woff") format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
     display: flex;
     flex-direction: row;
@@ -22,13 +31,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
     
-}
-
-.formtop,
-.formbottom,
-form {
-    padding-left: 10px;
 }
 
 .fernleaves {
@@ -39,12 +43,12 @@ form {
     
 }
 
-.odinlogo {
+.odinlogo,
+.odinlogodiv{
     height: 15vh;
 }
 
 .odinlogodiv {
-    height: 15vh;
     display: flex;
     position: absolute;
     color: white;
@@ -58,7 +62,8 @@ form {
 
 .odinlogodiv p {
     align-self: center;
-    font-size: 500%;
+    font-size: 700%;
+    font-family: "odin";
 }
 
 .credit {
@@ -73,35 +78,29 @@ form {
 
 .formrow {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     margin-bottom: 20px;
     align-items: flex-start;
 
 }
 
+.formlabel {
+    display: flex;
+    flex-direction: column;
+}
+
 .formrow input {
     font-size: 14px;
     padding: 7px;
     border: 1px solid #E5E7EB;
-    margin: 0px 7px 0px 7px;
     border-radius: 4px;
-}
-
-form h3 {
-    padding: 7px;
-}
-
-.formrow input[type="text"] {
-    padding: 7px;
-    font-size: 14px;
-
 }
 
 .formrow label {
     font-size: 11px;
-    margin: 0px 7px 3px 7px;
+    letter-spacing: .05rem;
 }
 
 .formtotal {
@@ -115,10 +114,42 @@ form {
     background-color: white;
 }
 
-h3 {
+.formtop h3,
+form,
+.formbottom {
     margin: inherit;
+    padding: 0 calc(10vw + 50px) 20px calc(1vw + 20px);
 }
 
-a:visited {
+.logocol a:visited,
+.logocol a:link {
     color: white;
+}
+
+.formcol a:visited,
+.formcol a:link {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.formlabel {
+    padding-right: 50px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border-radius: 7px;
+    height: 2.5rem;
+    width: 11rem;
+    border: none;
+}
+
+.formbottom {
+    padding-top: 30px;
+}
+
+input:focus {
+    border: 1px solid lightseagreen;
+    box-shadow: 0 2px 5px lightgray;
 }
