@@ -7,6 +7,11 @@
 
 
 
+body:focus {
+    outline: none;
+    border: none;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -37,10 +42,11 @@ body {
 
 .fernleaves {
     position: absolute;
-    width: 60vw;
+    width: 45vw;
+    height: 100vh;
     z-index: -1;
     margin-left: -5vw;
-    
+    object-fit: cover;
 }
 
 .odinlogo,
@@ -50,12 +56,12 @@ body {
 
 .odinlogodiv {
     display: flex;
+    flex-direction: row;
     position: absolute;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
     width: 40vw;
-    flex-direction: row;
     top: 30vh;
     justify-content: center;
 }
@@ -73,7 +79,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 40vw;
-    
+    padding-bottom: 0px;
 }
 
 .formrow {
@@ -143,6 +149,8 @@ button {
     height: 2.5rem;
     width: 11rem;
     border: none;
+    padding: 0;
+    margin-top: -5px;
 }
 
 .formbottom {
@@ -150,6 +158,22 @@ button {
 }
 
 input:focus {
+    appearance: none;
+    outline: none;
     border: 1px solid lightseagreen;
     box-shadow: 0 2px 5px lightgray;
+}
+
+input[type=password]:invalid {
+    border: red solid 1px;
+}
+
+.pwordinvalid {
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    margin-bottom: -20px;
+    position: relative;
+    color: red;
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="logocol">
-        <div>
+        <div class="imgdiv">
             <img src="images/GreenLeaf.png" alt="High resolution picture of fern leaves" class="fernleaves">
         </div>
         <div class="odinlogodiv">
@@ -50,11 +50,12 @@
                 <div class="formrow">
                     <div class="formlabel">
                         <label for="pword">PASSWORD</label>
-                        <input type="password" name="pword">
+                        <input type="password" name="pword" class="pword">
+                        <p class="pwordinvalid"></p>
                     </div>
                     <div class="formlabel">
                         <label for="pwordconfirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="pwordconfirm">
+                        <input type="password" name="pwordconfirm" class="pwordconfirm">
                     </div>
                 </div>
             </div>
@@ -64,5 +65,6 @@
             <p>Already have an account? <a href="https://google.com" target="_blank">Log in</a></p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
